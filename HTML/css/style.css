@@ -466,8 +466,8 @@ body {
 	background: #fff;
 }
 .logo {
-	height: 4.5em;
-	width: 4.5em;
+	height: auto;
+	width: 5em;
 }
 .main-nav ul {
 	padding: 0;
