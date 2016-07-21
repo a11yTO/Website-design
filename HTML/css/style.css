@@ -430,6 +430,20 @@ textarea {
 	overflow: hidden;
 }
 
+/*
+ * 1. I used the universal selector (*) and a generic "a" selector prior to the focus pseudo-element to insure the styles I declared below are applied to anything that receives focus, and in a consistant manner.
+ * 2. Use of !important's ensure conflicts are overridden by FOCUS' styles.
+ */
+
+*:focus, /* 1 */
+a:focus,
+a:active {
+	outline: 3px solid #3cf !important; /* 2 */
+}
+a:focus img {
+	display: inline-block !important; /* to ensure the outline wraps an entire linked image. */
+}
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -457,21 +471,103 @@ textarea {
     *zoom: 1;
 }
 
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
 body {
-	background: #eee;
-	color: #222;
-	padding: 0;
+	background: #fff;
+	color: #333;
+	font-size: 1rem;
+}
+.header,
+.block,
+.site-info {
+	padding: 0 5%;
 }
 .header {
-	background: #fff;
+	padding-top: 6px;
+}
+.brand {
+	padding-bottom: 24px;
+	min-height: 3.5rem;
 }
 .logo {
-	height: auto;
-	width: 5em;
+	height: 3.5rem;
+	float: left;
+	width: auto;
+}
+.site-title {
+	float: left;
+	font-weight: normal;
+	font-size: 0.65rem;
+	margin: 0;
+	padding: 1.415rem 0;
+}
+.site-title a,
+.main-nav a {
+	color: #333;
+	text-decoration: none;
+}
+.site-title a {
+	padding: 0.75rem;
+}
+.main-nav {
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 95%;
+	margin-bottom: 24px;
+	text-transform: lowercase;
 }
 .main-nav ul {
+	list-style: none;
+	margin: 0;
 	padding: 0;
 }
-.main-nav ul li {
-	list-style: none;
+.event-details {
+	background: #ddd;
+	border: 1px solid #aaa;
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 115%;
+	padding: 6px 5%;
+	min-height: 10.75rem;
+	margin-bottom: 48px;
+	text-align: left;
+}
+.content-wrap {
+	background: #ddd;
+	text-align: center;
+}
+.block {
+	border-bottom: 1px solid #aaa;
+	padding: 7rem 6%;
+}
+.block:first-of-type {
+	border-top: 1px solid #aaa;
+}
+.article-title {
+	font-size: 1.5rem;
+	margin: 0;
+}
+.site-info {
+	padding: 24px 5%;
+}
+
+@media all and (min-width: 30em) {
+	.main-nav {
+		float: left;
+	}
+	.event-details {
+		float: right;
+		margin-bottom: 24px;
+		width: 40%;
+	}
 }
