@@ -484,8 +484,16 @@ html {
 }
 body {
 	background: #fff;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
 	color: #333;
 	font-size: 1rem;
+	margin: 0 auto;
+	max-width: 80rem;
+	overflow-x: hidden;
+}
+.page-wrap {
+	margin: 0 -1px;
 }
 .header,
 .block,
@@ -544,11 +552,13 @@ body {
 }
 .content-wrap {
 	background: #ddd;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
 	text-align: center;
 }
 .block {
 	border-bottom: 1px solid #aaa;
-	padding: 7rem 6%;
+	padding: 7rem 5%;
 }
 .block:first-of-type {
 	border-top: 1px solid #aaa;
