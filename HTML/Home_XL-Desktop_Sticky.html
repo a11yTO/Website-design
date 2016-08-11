@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<title>Home XL - Desktop Sticky</title>
+
+<link rel="stylesheet" href="css/style.css" />
+
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+<body class="sticky">
+
+	<div class="page-wrap">
+
+		<header class="header cf" role="banner">
+
+			<div class="branding">
+
+				<h1 class="site-title">#a11yTO</a></h1>
+
+				<p class="site-description">Accessibility Toronto</p>
+
+				<nav class="main-nav">
+					<ul>
+						<li class="selected"><a href="#">Meet</a></li>
+						<li><a href="#">Share</a></li>
+						<li><a href="#">Include</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+
+		<div class="content-wrap">
+
+			<article class="why-go-block">
+
+				<p class="breadcrumb">About our group / <span class="brand">#a11yTO</span></p>
+
+				<h2 class="article-title">Why Go?</h2>
+
+				<p>If you're interested in accessibility #a11yTO is your home. We're a group of passionate people building a community centred around sharing experiences, ideas and inclusive solutions.</p>
+
+				<p>All to help each other get better.
+
+				<button class="learn-button">Learn More</button>
+
+			</article>
+
+		</div>
+
+		<footer class="site-info" role="contentinfo">
+
+			<select name="list" id="list" accesskey="target">
+				<option value='none' selected>Choose a Design</option>
+				<option value="index.html">During Conference</option>
+				<option value="Home_XL-Desktop_Sticky.html">Home XL - Desktop Sticky</option>
+				<option value="Home_XL-Desktop_Regular.html">Home XL - Desktop Regular</option>
+				<option value="Home_XL-Structure_Regular.html">Home XL - Regular</option>
+			<select>
+			<input type=button value="Go" onclick="goToNewPage()" />
+
+			<p>2016 Accessibility Toronto</p>
+
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

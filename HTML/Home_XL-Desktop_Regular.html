@@ -2,25 +2,25 @@
 
 <head>
 
-	<meta charset="UTF-8" />
+<meta charset="UTF-8" />
 
-	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-	<title>Home XL - Structure Regular</title>
+<title>Home XL - Desktop Sticky</title>
 
-	<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css" />
 
-	<script type="text/javascript">
-	    function goToNewPage()
-	    {
-	        var url = document.getElementById('list').value;
-	        if(url != 'none') {
-	            window.location = url;
-	        }
-	    }
-	</script>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
 
-<body class="structure">
+<body class="regular">
 
 	<div class="page-wrap">
 
@@ -36,9 +36,9 @@
 
 			<nav class="main-nav">
 				<ul>
-					<li><a href="#">Meet</a></li>
+					<li class="selected"><a href="#">Meet</a></li>
 					<li><a href="#">Share</a></li>
-					<li><a href="#">Learn</a></li>
+					<li><a href="#">Include</a></li>
 				</ul>
 			</nav>
 
@@ -52,21 +52,17 @@
 
 		<div class="content-wrap">
 
-			<article class="about block">
+			<article class="why-go-block">
 
-				<h2 class="article-title">Event overview/ About</h2>
+				<p class="breadcrumb">About our group / <span class="brand">#a11yTO</span></p>
 
-			</article>
+				<h2 class="article-title">Why Go?</h2>
 
-			<article class="social block">
+				<p>If you're interested in accessibility #a11yTO is your home. We're a group of passionate people building a community centred around sharing experiences, ideas and inclusive ssolutions.</p>
 
-				<h2 class="article-title">Discussion/ Social/ FAQ</h2>
+				<p>All to help each other get better.
 
-			</article>
-
-			<article class="archives block">
-
-				<h2 class="article-title">Resources/ Archives</h2>
+				<button class="learn-button">Learn More</button>
 
 			</article>
 
