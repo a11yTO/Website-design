@@ -485,6 +485,7 @@ html {
 body {
 	background: #fff;
 	color: #333;
+	font-family: 'Poppins', sans-serif;
 	font-size: 1rem;
 	position: relative;
 }
@@ -524,7 +525,7 @@ body {
 .main-nav {
 	background: #fff;
 	font-size: 4rem;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 95%;
 	padding: 24px 5%;
 	text-transform: lowercase;
@@ -602,7 +603,7 @@ body {
 	padding: 0 0.75rem;
 }
 .sticky .main-nav a {
-	padding: 0.5rem 0.25rem;
+	padding: 0.25rem;
 }
 .selected a {
 	color: #eb3b13;
@@ -623,11 +624,9 @@ body {
 	font-size: 0.8rem;
 	font-weight: bold;
 	margin-bottom: 96px;
-	text-transform: uppercase;
 }
 .breadcrumb .brand {
 	color: #1d7fa8;
-	text-transform: lowercase;
 }
 .sticky .article-title,
 .regular .article-title {
@@ -679,13 +678,13 @@ body {
 	}
 	.regular .branding {
 		background: #fff;
-		width: 33%;
+		width: 35%;
 	}
 	.regular .event-details {
 		padding-top: 3.5rem;
 		position: absolute;
 		top: 0;
-		right: 2.5%;
+		right: 5%;
 		height: 100%;
 		width: 40%;
 	}
