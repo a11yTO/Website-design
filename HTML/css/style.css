@@ -484,13 +484,11 @@ html {
 }
 body {
 	background: #fff;
-	color: #333;
-	font-family: 'Poppins', sans-serif;
+	color: #444;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
-	position: relative;
 }
 .branding,
-.main-nav,
 .block,
 .site-info {
 	padding: 0 5%;
@@ -516,7 +514,7 @@ body {
 }
 .site-description a,
 .main-nav a {
-	color: #333;
+	color: #444;
 	text-decoration: none;
 }
 .site-title a {
@@ -524,9 +522,9 @@ body {
 }
 .main-nav {
 	background: #fff;
-	font-size: 4rem;
+	font-size: 5rem;
 	font-weight: 700;
-	line-height: 95%;
+	line-height: 100%;
 	padding: 24px 5%;
 	text-transform: lowercase;
 }
@@ -535,16 +533,31 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.event-details {
+.selected a {
+	color: #eb3b13;
+	text-decoration: underline;
+}
+.event {
 	background: #ddd;
 	border: 1px solid #aaa;
 	font-weight: bold;
-	font-size: 1.5rem;
-	line-height: 115%;
+	font-size: 1rem;
+	line-height: 150%;
 	padding: 6px 5%;
-	min-height: 10.75rem;
 	margin: 0 5% 48px;
 	text-align: left;
+}
+.event-details {
+	min-height: 10.75rem;
+	position: relative;
+}
+.event-details ul {
+	list-style: none;
+	margin-top: 0;
+	padding: 0;
+}
+.event-details a {
+	color: #fff;
 }
 .content-wrap {
 	background: #ddd;
@@ -572,7 +585,7 @@ body {
 	.main-nav {
 		float: left;
 	}
-	.event-details {
+	.event {
 		float: right;
 		margin: 24px 5% 24px;
 		width: 40%;
@@ -605,25 +618,27 @@ body {
 .sticky .main-nav a {
 	padding: 0.25rem;
 }
-.selected a {
-	color: #eb3b13;
-	text-decoration: underline;
-}
 .sticky .content-wrap,
 .regular .content-wrap {
 	padding: 48px 0;
 	text-align: left;
 }
-.why-go-block {
+.content-block {
 	background: #fff;
 	margin: 0 5%;
 	padding: 3px 24px;
+	position: relative;
 	max-width: 32rem;
 }
 .breadcrumb {
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	font-weight: bold;
 	margin-bottom: 96px;
+}
+.counter {
+	font-size: 0.75rem;
+	margin-bottom: 48px;
+	text-transform: uppercase;
 }
 .breadcrumb .brand {
 	color: #1d7fa8;
@@ -633,11 +648,13 @@ body {
 	color: #1d7fa8;
 	font-size: 2.5rem;
 }
-.why-go-block  p {
+.content-block  p {
 	color: #666;
 	line-height: 200%;
 	margin-bottom: 3rem;
 }
+
+.joinus-button,
 .learn-button {
 	background: #eb3b13;
 	border: 0;
@@ -647,24 +664,40 @@ body {
 	padding: 10px 48px;
 	text-transform: uppercase;
 }
-
-@media all and (min-width: 42em) {
-	.learn-button {
+@media all and (min-width: 30rem) {
+	.joinus-button {
 		float: right;
-		margin-right: -6.5rem;
-		margin-top: -0.6rem;
+		margin-top: -3rem;
 	}
 }
 
-.regular .event-details {
+@media all and (min-width: 55rem) {
+	.main-nav {
+		font-size: 6rem;
+	}
+	.joinus-button {
+		bottom: -0.65rem;
+		right: -5rem;
+	}
+	.joinus-button,
+	.learn-button {
+		position: absolute;
+	}
+	.learn-button {
+		bottom: 2.5rem;
+		right: -5.5rem;
+	}
+}
+
+.regular .event {
 	background: #1d7fa8;
 	border: 0;
 	color: #fff;
-	margin: 0 5% 48px;
+	margin: 0;
 	width: auto;
 }
 .regular .main-nav,
-.regular .event-details {
+.regular .event {
 	float: none;
 }
 .regular .content-wrap {
@@ -672,7 +705,7 @@ body {
 	z-index: 100;
 }
 
-@media all and (min-width: 45em) {
+@media all and (min-width: 55rem) {
 	.regular .header {
 		background: #1d7fa8;
 	}
@@ -680,11 +713,11 @@ body {
 		background: #fff;
 		width: 35%;
 	}
-	.regular .event-details {
-		padding-top: 3.5rem;
+	.regular .event {
+		padding: 5.5rem 2% 12px;
 		position: absolute;
 		top: 0;
-		right: 5%;
+		right: 10%;
 		height: 100%;
 		width: 40%;
 	}
