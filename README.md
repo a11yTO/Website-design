@@ -1,3 +1,3 @@
-# Website Design
+# Website Design README
 
 This repository contains the various elements we, #a11yTO (Accessibility Toronto), used to develop our site. [Starting with the Website Design Mockups](https://github.com/a11yTO/website/tree/master/Website-Design-Mockups) — created by [Silvia Gonzalez](http://hellosilvia.com/). [Their conversion into HTML and CSS](https://github.com/a11yTO/website/tree/master/HTML). And finally [an optimized version, with the original (for comparison), of our logo](https://github.com/a11yTO/website/tree/master/Optimized-Logo).
